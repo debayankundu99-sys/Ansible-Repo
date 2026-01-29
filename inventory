@@ -1,0 +1,11 @@
+[Bastion-host]
+Bastion-host ansible_host=100.10.1.165
+[jenkins]
+jenkins ansible_host=100.10.3.111
+[app]
+app ansible_host=100.10.4.67
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/aws-project.pem
+ansible_python_interpreter=/usr/bin/python3
